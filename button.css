@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body>div {
+    margin: auto;
+}
+
+/* Block */
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: transparent;
+    /*trong suốt*/
+    border: none;
+    outline: none;
+    color: white;
+    padding: 12px 38px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: opacity .2s linear;
+}
+.btn:hover{
+    opacity: 0.8;
+}
+/* CSS cho các element giống nhau đứng liền kề nhau */
+.btn + .btn {
+    margin-left: 16px;
+}
+
+/* Modifier */
+.btn--success {
+    background-color: #71be34;
+}
+
+.btn--warn {
+    background-color: #ffb702;
+}
+
+.btn--danger {
+    background-color: #ff623d;
+}
+.btn--disabled {
+    opacity: 0.5 !important;
+    cursor: not-allowed;
+}
